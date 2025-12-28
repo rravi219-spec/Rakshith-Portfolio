@@ -79,17 +79,12 @@
     .project-card .links{display:flex;gap:10px;margin-top:auto;flex-wrap:wrap}
     .project-card .links a{font-size:14px;padding:.5rem .9rem}
     .feature-badge{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem .8rem;border-radius:999px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:var(--accent-ml);font-size:13px;font-weight:700;margin-bottom:12px}
-    .project-image{width:100%;height:auto;border-radius:12px;margin:12px 0;border:1px solid #1f2330;box-shadow:var(--shadow);cursor:pointer;transition:transform .2s}
-    .project-image:hover{transform:scale(1.02)}
-    .image-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:12px 0}
-    .image-grid img{width:100%;height:auto;border-radius:8px;border:1px solid #1f2330;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer;transition:transform .2s}
-    .image-grid img:hover{transform:scale(1.05)}
     footer{max-width:1100px;margin:20px auto 60px;padding:0 20px;color:var(--muted)}
     .contact{display:flex;flex-wrap:wrap;gap:12px}
     .badge{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .7rem;border:1px dashed #374151;border-radius:999px;color:var(--muted)}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .achievement{display:flex;align-items:center;gap:.5rem;margin:8px 0;color:var(--accent-ml)}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid,.grid-2{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.image-grid{grid-template-columns:1fr}}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid,.grid-2{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -138,13 +133,13 @@
       </div>
     </section>
 
-    <!-- Projects - ML PROJECT FIRST WITH IMAGES! -->
+    <!-- Projects - ML PROJECT FIRST! -->
     <section id="projects" class="panel card">
       <h2>Featured Projects</h2>
       <p class="subtitle" style="margin-bottom:20px">Machine learning systems and strategic work demonstrating technical skills and business impact.</p>
       
       <div class="grid-2">
-        <!-- FEATURED ML PROJECT WITH IMAGES -->
+        <!-- FEATURED ML PROJECT - FULL WIDTH -->
         <article class="project-card featured" style="grid-column: 1 / -1;">
           <div class="feature-badge">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -166,14 +161,6 @@
           <div class="achievement">✓ 13 tactical positions classified with position-specific models</div>
           <div class="achievement">✓ €200M+ market opportunities, 408 bargains identified</div>
           
-          <!-- KEY VISUALIZATIONS -->
-          <div class="image-grid">
-            <img src="https://raw.githubusercontent.com/rravi219-spec/Football-ML-Analysis/main/visualizations/tracking_back_impact.png" alt="Tracking Back Impact: 67% to 99% accuracy improvement" loading="lazy" onclick="window.open(this.src, '_blank')">
-            <img src="https://raw.githubusercontent.com/rravi219-spec/Football-ML-Analysis/main/visualizations/model_comparison.png" alt="Model Comparison: XGBoost vs Random Forest" loading="lazy" onclick="window.open(this.src, '_blank')">
-            <img src="https://raw.githubusercontent.com/rravi219-spec/Football-ML-Analysis/main/visualizations/value_vs_performance.png" alt="Value vs Performance: 408 bargains identified" loading="lazy" onclick="window.open(this.src, '_blank')">
-            <img src="https://raw.githubusercontent.com/rravi219-spec/Football-ML-Analysis/main/visualizations/feature_importance.png" alt="Feature Importance by Position" loading="lazy" onclick="window.open(this.src, '_blank')">
-          </div>
-          
           <p><strong>Tech Stack:</strong> Python, XGBoost, scikit-learn, pandas, NumPy, matplotlib, seaborn. Complete pipeline with 10 production-ready scripts (~2,500 lines), 7 professional visualizations, comprehensive documentation.</p>
           
           <div class="links">
@@ -182,7 +169,6 @@
               View GitHub Repo
             </a>
             <a class="button secondary" href="https://github.com/rravi219-spec/Football-ML-Analysis#readme" target="_blank" rel="noopener">Full Documentation</a>
-            <a class="button secondary" href="https://github.com/rravi219-spec/Football-ML-Analysis/tree/main/visualizations" target="_blank" rel="noopener">All Visualizations</a>
           </div>
         </article>
 
@@ -197,7 +183,7 @@
           <h3>GDPR Compliance Framework for AI Startups</h3>
           <small>AssessGru · Business Consulting Project · 2024-2025</small>
           <p>Designed comprehensive GDPR framework for AI-driven startup entering UK/Ireland markets. Covers biometric data governance, consent mechanisms, Privacy-by-Design implementation, and cross-border transfer safeguards. Enabled <strong>£25M-£40M revenue opportunity</strong> while eliminating <strong>€20M regulatory risk</strong>.</p>
-          <p><strong>Key Results:</strong> 67-89% risk reduction across 5 processing categories. 230-300% win rate improvement vs. non-compliant competitors. Framework includes governance structures, Privacy-Enhancing Technologies, ISO/IEC 27701 roadmap.</p>
+          <p><strong>Key Results:</strong> 67-89% risk reduction across 5 processing categories. 230-300% win rate improvement vs. non-compliant competitors.</p>
           <div class="links">
             <a class="button secondary" href="/Rakshith-Portfolio/GDPR-Framework.pdf" target="_blank">View Framework (PDF)</a>
           </div>
@@ -213,7 +199,7 @@
           </div>
           <h3>Customer Analytics & Automation</h3>
           <small>PowerSchool · 2022</small>
-          <p>Built Python-based analytics workflows and Excel automation that reduced reporting turnaround time by 35%. Created Pandas-driven customer segmentation models informing expansion strategies across 250+ B2B accounts, contributing to improved renewal rates and targeted upsell opportunities.</p>
+          <p>Built Python-based analytics workflows and Excel automation that reduced reporting turnaround time by 35%. Created Pandas-driven customer segmentation models informing expansion strategies across 250+ B2B accounts.</p>
           <div class="links">
             <a class="button secondary" href="#contact">Request Details</a>
           </div>
@@ -228,8 +214,8 @@
           </div>
           <h3>Customer Churn Risk Predictor</h3>
           <small>Personal Project · 2024</small>
-          <p>Developed Python-based ML system using scikit-learn to predict customer churn risk 30 days in advance. Built feature engineering pipeline analyzing engagement patterns across multiple touchpoints. Created interactive Matplotlib/Seaborn dashboard for CSM teams to prioritize at-risk accounts.</p>
-          <p><strong>Tech:</strong> Python, scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Logistic Regression, Random Forest</p>
+          <p>Developed Python-based ML system using scikit-learn to predict customer churn risk 30 days in advance. Built feature engineering pipeline analyzing engagement patterns. Created interactive dashboard for CSM teams.</p>
+          <p><strong>Tech:</strong> Python, scikit-learn, Pandas, NumPy, Matplotlib, Seaborn</p>
           <div class="links">
             <a class="button secondary" href="#contact">GitHub Coming Soon</a>
           </div>
@@ -248,7 +234,7 @@
             <li>Managed 250 B2B school accounts (<strong>$220M ARR</strong>), achieving <strong>98% renewals</strong> (+12% YoY).</li>
             <li>Led onboarding, training & QBRs; increased adoption by <strong>+27%</strong>.</li>
             <li>Built data-driven engagement in Salesforce & NetSuite; reporting efficiency <strong>+40%</strong>.</li>
-            <li>Raised CSAT from <strong>82 → 91</strong>, NPS <strong>+15</strong>; mentored 4 associates (escalations −60%).</li>
+            <li>Raised CSAT from <strong>82 → 91</strong>, NPS <strong>+15</strong>.</li>
           </ul>
         </article>
         <article class="item">
@@ -266,7 +252,7 @@
           <small>Newbridge, Ireland · Dec 2024 – Present</small>
           <ul>
             <li>Led daily ops & a 15‑member team; <strong>100%</strong> food safety compliance.</li>
-            <li>Peak-hour order efficiency improved <strong>+22%</strong>; trained 5 hires (onboarding −30%).</li>
+            <li>Peak-hour order efficiency improved <strong>+22%</strong>.</li>
             <li>Processed €3,000+ daily with zero reconciliation errors.</li>
           </ul>
         </article>
@@ -282,17 +268,17 @@
           <p><strong>Languages:</strong> Python (Advanced)<br>
           <strong>ML Libraries:</strong> XGBoost, scikit-learn, Pandas, NumPy<br>
           <strong>Visualization:</strong> Matplotlib, Seaborn<br>
-          <strong>Techniques:</strong> Feature Engineering, Ensemble Learning, Cross-Validation, Gradient Boosting</p>
+          <strong>Techniques:</strong> Feature Engineering, Ensemble Learning, Cross-Validation</p>
         </div>
         <div class="item">
           <h4>📊 Analytics & Business Tools</h4>
           <p><strong>CRM/CS:</strong> Salesforce, NetSuite, Gainsight<br>
           <strong>Analysis:</strong> Excel (Advanced), SQL, Statistical Modeling<br>
-          <strong>Reporting:</strong> Data Visualization, KPI Dashboards, QBR Decks</p>
+          <strong>Reporting:</strong> Data Visualization, KPI Dashboards</p>
         </div>
         <div class="item">
           <h4>💼 Customer Success</h4>
-          <p>QBRs · Onboarding · Playbooks · Stakeholder Mapping · Renewal & Expansion · Churn Risk Management · Customer Health Scoring</p>
+          <p>QBRs · Onboarding · Playbooks · Stakeholder Mapping · Renewal & Expansion · Churn Risk Management</p>
         </div>
         <div class="item">
           <h4>🛠️ Development & Tools</h4>
